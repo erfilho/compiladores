@@ -1,5 +1,4 @@
 # Configurando as importações
-
 import ply.lex as lex
 import gradio as gr
 import re
@@ -105,4 +104,4 @@ with gr.Blocks() as demo:
     analisa_botao.click(fn=input, inputs=[equacao], outputs=[saida])
 
 # Lancando a interface
-demo.launch(inline=False, share=True)
+demo.launch()
